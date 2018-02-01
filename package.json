@@ -4,9 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
     "start": "webpack-dev-server --port=4200",
     "build": "webpack",
-    "test": "karma start ./karma.conf.js",
+    "test": "karma start ./karma.conf.js --single-run",
     "lint": "ng lint",
     "e2e": "protractor ./protractor.conf.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet"
